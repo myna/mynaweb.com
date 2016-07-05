@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Myna</title>
+    <style>
+      html, body {
+        text-align: center;
+        background: #222;
+        font-family: sans-serif;
+      }
+
+      .centered {
+        position: absolute;
+        top: 50%;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 600px;
+        margin-top: -350px;
+      }
+
+      .closed {
+        color: #ddd;
+      }
+
+      .footer {
+        position: absolute;
+        height: 20px;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        text-align: center;
+        margin-top: 2em;
+        color: #777;
+      }
+
+      .footer a {
+        color: #777;
+        text-decoration: none;
+      }
+
+      @media (max-height: 700px) {
+        .centered,
+        .footer {
+          position: relative;
+          width: auto;
+          height: auto;
+          top: auto;
+          bottom: auto;
+          left: auto;
+          right: auto;
+          margin: 0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="centered">
+      <img src="mynabird.png" width="223">
+      <h1><img src="wordmark.png" alt="Myna"></h1>
+      <p class="closed">
+        We are closed for business. Sorry for the inconvenience.
+      </p>
+    </div>
+
+    <p class="footer">
+      Copyright 2011-2016 <a href="http://untyped.com">Untyped Ltd</a>. All rights reserved.
+    </p>
+  </body>
+</html>
